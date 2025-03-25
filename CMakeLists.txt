@@ -1,0 +1,30 @@
+if(${ENABLE_EXAMPLES})
+    set(examples_as_tests_sources
+        #test/custom_module-examples-test-suite.cc
+        )
+endif()
+
+build_lib(
+    LIBNAME custom_module
+    SOURCE_FILES
+        model/aggregate_switch.cc
+        model/custom_client.cc
+        model/parameter_server.cc
+        helper/aggregate_switch_helper.cc
+        helper/custom_client_helper.cc
+        helper/parameter_server_helper.cc
+        utils/my_utils.cc
+    HEADER_FILES
+        model/aggregate_switch.h
+        model/custom_client.h
+        model/parameter_server.h
+        helper/aggregate_switch_helper.h
+        helper/custom_client_helper.h
+        helper/parameter_server_helper.h
+        utils/my_utils.h
+    LIBRARIES_TO_LINK
+        ${libinternet}
+    TEST_SOURCES
+        test/custom_module-test-suite.cc
+        ${examples_as_tests_sources}
+)
