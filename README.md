@@ -1,5 +1,5 @@
 # PA-ATP in ns-3
-The files are custom modules written according to PA-ATP: Progress-Aware Transmission Protocol for In-Network Aggregation (10.1109/ICNP59255.2023.10355636)
+The files are custom modules written based on the conference paper PA-ATP: Progress-Aware Transmission Protocol for In-Network Aggregation, DOI: 10.1109/ICNP59255.2023.10355636
 
 ## Setup
 1. Move mytopo.cc to ns-3-dev/scratch
