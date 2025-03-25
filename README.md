@@ -3,5 +3,5 @@ The files are custom modules written to according to PA-ATP: Progress-Aware Tran
 
 ## Setup
 1. Move mytopo.cc to ns-3-dev/scratch
-2. Move pa-atp to ns-3-dev/contrib
+2. Move the rest of the files to ns-3-dev/contrib/pa-atp
 3. Run mytopo script in ns-3
