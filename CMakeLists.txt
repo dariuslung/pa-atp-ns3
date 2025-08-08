@@ -1,11 +1,5 @@
-if(${ENABLE_EXAMPLES})
-    set(examples_as_tests_sources
-        #test/custom_module-examples-test-suite.cc
-        )
-endif()
-
 build_lib(
-    LIBNAME custom_module
+    LIBNAME pa-atp
     SOURCE_FILES
         model/aggregate_switch.cc
         model/custom_client.cc
@@ -23,8 +17,10 @@ build_lib(
         helper/parameter_server_helper.h
         utils/my_utils.h
     LIBRARIES_TO_LINK
+        ${libapplications}
+        ${libcore}
+        ${libnetwork}
         ${libinternet}
-    TEST_SOURCES
-        test/custom_module-test-suite.cc
-        ${examples_as_tests_sources}
+        ${libpoint-to-point}
+
 )

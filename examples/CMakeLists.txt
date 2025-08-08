@@ -1,5 +1,11 @@
 build_lib_example(
-    NAME custom_module-example
-    SOURCE_FILES custom_module-example.cc
-    LIBRARIES_TO_LINK ${libcustom_module}
+    NAME basic_dumbbell
+    SOURCE_FILES basic_dumbbell.cc
+    LIBRARIES_TO_LINK
+        ${libapplications}
+        ${libcore}
+        ${libnetwork}
+        ${libinternet}
+        ${libpoint-to-point}
+        ${libpa-atp}
 )
